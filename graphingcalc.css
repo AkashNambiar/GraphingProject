@@ -1,0 +1,43 @@
+body{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+#title{
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 36pt;
+
+}
+#graph{
+    margin-top: 100px;
+    grid-column: 1;
+    grid-row: 1;
+    height: 600px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    border: 2px black solid;
+
+}
+#yaxis{
+    grid-column: 6;
+    grid-row-start: 1;
+    grid-row-end: 11;
+    width: 0.5px;
+    border: 1px black solid;
+}
+#xaxis{
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row: 6;
+    height: 0.5px;
+    border: 1px black solid;
+}
+#equation{
+    margin-top: 100px;
+    grid-column: 2;
+    height: 75px;
+    width: 200px;
+}

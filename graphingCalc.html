@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Graphing Calculator</title>
+
+  <link rel="stylesheet" href="graphingcalc.css">
+
+</head>
+
+<body id = "body">
+    <input type="text" name="fname" id = "equation"><br>
+    <!--&#127814 &#128166-->
+    <h1 id = "title">Graphing Calculator</h1>
+    <div id = "graph">
+        <div id = "xaxis"></div>
+        <div id = "yaxis"></div>
+    </div>
+  <script>
+  window.addEventListener("load", initGraph);
+
+  function initGraph(){
+      for(var i = 1; i < 11; i++){
+          for(var j = 1; j < 11; j++){
+            var graphPixel = document.createElement("p");
+            graphPixel.style.borderColor = "black";
+            graphPixel.style.borderWidth = "1px";
+            graphPixel.style.borderStyle = "solid";
+            graphPixel.style.gridRow(i);
+            graphPixel.style.gridColumn(j);
+            document.getElementById("graph").appendChild(graphPixel);
+          }
+      }
+     
+  }
+  </script>
+</body>
+</html>
